@@ -19,5 +19,6 @@ for (const i in movies) {
 }
 
 for (const movie of movies) {
-  console.log(movie); // La La Land, Antman, Deadpool
+  if (movie === 'Deadpool') break;
+  console.log(movie); // La La Land, Antman
 }
