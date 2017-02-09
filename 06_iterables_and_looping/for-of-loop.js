@@ -26,3 +26,12 @@ for (const movie of movies) {
   if (movie === 'Deadpool') break;
   console.log(movie); // La La Land, Antman
 }
+
+/*
+ * what if we want to access current index of the array?
+ *  1. loop through ArrayIterator by calling Array.prototype.entries()
+ *  2. destructure current item into [i, item]
+ */
+for (const [i, movie] of movies.entries()) {
+  console.log(`${movie} is the ${i+1} item`);
+}
