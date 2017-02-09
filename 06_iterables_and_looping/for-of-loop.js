@@ -18,6 +18,10 @@ for (const i in movies) {
   console.log(movies[i]); // La La Land, Antman, Deadpool, 2016, function() {..}
 }
 
+/*
+ * 1. can break or contiune loops.
+ * 2. iterate only throgh the items in target array
+ */
 for (const movie of movies) {
   if (movie === 'Deadpool') break;
   console.log(movie); // La La Land, Antman
