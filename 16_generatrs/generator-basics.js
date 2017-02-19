@@ -4,6 +4,11 @@ const movies = [
   {name: 'Ant-Man', year: 2015}
 ];
 
+/*
+ * Create a generator "loop"
+ * Generators are functions which can be exited and later re-entered to where it 
+ * was left off.
+ */
 function* loop (arr) {
   console.log('first call!');
   for (const item of arr) {
