@@ -6,6 +6,7 @@ function* fetchApis () {
   const mapsEndpoint = 'https://maps.googleapis.com/maps/api/geocode/json?address=Oxford%20U    niversity,%20uk&sensor=false';
   const booksEndpoint = 'https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699v';
   
+  // each yield won't run until the previous is done
   const bbc = yield ajax(bbcEndpoint);
   const maps = yield ajax(mapsEndpoint);
   const books = yield ajax(booksEndpoint);
