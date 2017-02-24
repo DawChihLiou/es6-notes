@@ -1,3 +1,6 @@
+/**
+ * Sets can be seen as Arrays with unique elements.
+ */
 const movies = new Set();
 movies.add('La La Land');
 movies.add('Deadpool');
